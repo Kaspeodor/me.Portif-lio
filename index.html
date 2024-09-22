@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus - DevHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <img src="./assets/minhaFoto.jpg" alt="foto-marcus">
+
+        <div class="header__container header-scroll">
+            <h1 class="header__title">Marcus Vinicius</h1>
+            <p class="header__subtitle">Desenvolvedor Front End | HTML, CSS, JavaScript, Git, Node.js</p>
+            <a href="#contato" class="header__cta">Entre em Contato</a>
+        </div>
+    </header>
+
+    <section id="sobre" class="section--sobre">
+        <h2 class="section__title">Sobre Mim</h2>
+        <p class="section__description">Sou um desenvolvedor web especializado em HTML, CSS, JavaScript e React. Minha experiência abrange projetos desde landing pages até aplicações complexas.</p>
+    </p>
+    </section>
+
+    <section id="habilidades" class="section--habilidades">
+        <h2 class="section__title">Formação</h2>
+        <p class="section__description">Sou um desenvolvedor web especializado em HTML, CSS, JavaScript e React. Minha experiência abrange projetos desde landing pages até aplicações complexas.</p>
+    </p> <br>
+
+        <h2 class="section__title">Habilidades</h2>
+        <ul class="skills__list">
+            <li class="skills__item"> <img src="./assets/html-logo.png" alt="html-logo"><br>HTML</li>
+            <li class="skills__item"> <img src="./assets/css-logo.png" alt="css-logo"><br>CSS</li>
+            <li class="skills__item"> <img src="./assets/javascript-logo.png" alt="js-logo"><br>JavaScript</li>
+            <li class="skills__item"> <img src="./assets/git-logo.png" alt="git-logo"><br>Git</li>
+            <li class="skills__item"> <img src="./assets/nodeJS-logo.png" alt="nodeJS-logo"><br>Node.js</li>
+        </ul>
+    </section>
+
+    <section id="projetos" class="section--projetos">
+        <h2 class="section__title">Projetos</h2>
+        <div class="projects__grid">
+            <article class="project__item pitBurguer">
+                <h3 class="project__title">Projeto 1</h3>
+                <p class="project__description">Hamburgueria Responsiva.</p>
+                <a href="https://kaspeodor.github.io/JS-ProjectMapReduceFilter/index.html" class="project__link">Ver Projeto</a>
+            </article>
+            <article class="project__item">
+                <h3 class="project__title">Projeto 2</h3>
+                <p class="project__description">Descrição do projeto 2. Uma ferramenta que... [detalhes].</p>
+                <a href="#" class="project__link">Ver Projeto</a>
+            </article>
+            <!-- Adicione mais projetos conforme necessário -->
+        </div>
+    </section>
+
+    <section id="contato" class="section--contato">
+        <h2 class="section__title">Contato</h2>
+        <form class="contact__form">
+            <label for="name" class="form__label">Nome:</label>
+            <input type="text" id="name" class="form__input" required>
+
+            <label for="email" class="form__label">Email:</label>
+            <input type="email" id="email" class="form__input" required>
+
+            <label for="message" class="form__label">Mensagem:</label>
+            <textarea id="message" class="form__textarea" required></textarea>
+
+            <button type="submit" class="form__submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="footer__container">
+            <div class="footer__socials"></div>
+                <a href="https://www.facebook.com/profile.php?id=100004031355364" class="footer__link"><img src="./assets/facebook-logo.png" alt="Facebook"></a>
+                <a href="https://www.linkedin.com/in/kaspeodor/" class="footer__link"><img src="./assets/linkedin-logo.png" alt="LinkedIn"></a>
+                <a href="https://github.com/Kaspeodor/Kaspeodor" class="footer__link"><img src="./assets/github-logo.png" alt="GitHub"></a>
+            </div>
+            <p class="footer__text">© 2024 Marcus Vinicius. Todos os direitos reservados.</p>
+            
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
