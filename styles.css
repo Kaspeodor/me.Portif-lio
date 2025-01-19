@@ -106,6 +106,10 @@ border-radius: 100%;
     color: #ff7e00; /* Laranja */
 }
 .section--sobre {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 70%;
+    margin: auto;
     background: #111; /* Fundo escuro */
     border-radius: 8px;
     padding: 40px 20px;
@@ -126,6 +130,8 @@ border-radius: 100%;
 }
 
 .section__description {
+    margin: auto;
+    width: 40%;
     position: relative; /* Para trazer o texto à frente do fundo */
     z-index: 1; /* Coloca o texto à frente do fundo */
     font-size: 1.1rem;
@@ -191,7 +197,9 @@ border-radius: 100%;
     overflow: hidden; /* Para esconder efeitos que saem da borda */
 }
 
-
+.project__item {
+    transition: 0.5s ease-in-out;
+}
 
 .project__item:hover {
     transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
@@ -201,7 +209,7 @@ border-radius: 100%;
     background: url(./assets/pitburger-back.png);
     background-repeat: no-repeat;
     background-size: cover;
-    transition: background 0.3s ease-in-out,;
+    transition: 0.5s ease-in-out;
 
 }
 
