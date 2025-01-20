@@ -5,37 +5,55 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+/*fonte importada */
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #111; /* Fundo preto */
-    color: #fff; /* Texto branco */
+    background-color: #111;
+    /* Fundo preto */
+    color: #fff;
+    /* Texto branco */
 }
 
 .header {
-    background-image: url('./assets/background-Pc.png'); /* Substitua pelo caminho da sua imagem */
-    background-size: cover; /* Faz a imagem cobrir toda a área */
-    background-position: center; /* Centraliza a imagem */
+    background-image: url('./assets/background-Pc.png');
+    /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    /* Faz a imagem cobrir toda a área */
+    background-position: center;
+    /* Centraliza a imagem */
     color: white;
     padding: 60px 20px;
     text-align: center;
-    position: relative; /* Para adicionar um efeito de sobreposição */
+    position: relative;
+    /* Para adicionar um efeito de sobreposição */
 }
+
 .section--sobre, .section--habilidades, .section--projetos, .section--contato {
-    opacity: 0; /* Inicia invisível */
-    transform: translateY(20px); /* Move a seção levemente para baixo */
-    transition: opacity 0.6s ease, transform 0.6s ease; /* Animações de transição */
+    opacity: 0;
+    /* Inicia invisível */
+    transform: translateY(20px);
+    /* Move a seção levemente para baixo */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    /* Animações de transição */
 }
 
 .fade-in {
-    opacity: 1; /* Torna visível */
-    transform: translateY(0); /* Move para a posição original */
+    opacity: 1;
+    /* Torna visível */
+    transform: translateY(0);
+    /* Move para a posição original */
 }
 
 .header-scroll {
-    transition: background 0.3s ease; /* Transição suave */
+    transition: background 0.3s ease;
+    /* Transição suave */
 }
 
 
@@ -46,49 +64,60 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Camada escura para melhorar a legibilidade do texto */
-    z-index: 0; /* Coloca o fundo atrás do conteúdo */
+    background: rgba(0, 0, 0, 0.5);
+    /* Camada escura para melhorar a legibilidade do texto */
+    z-index: 0;
+    /* Coloca o fundo atrás do conteúdo */
 }
-.header img{
-width: 200px;
-border-radius: 100%;
+
+.header img {
+    width: 200px;
+    border-radius: 100%;
 }
 
 .header__title {
     font-size: 2.5rem;
-    position: relative; /* Para trazer o texto à frente do fundo */
-    z-index: 1; /* Coloca o texto à frente do fundo */
+    position: relative;
+    /* Para trazer o texto à frente do fundo */
+    z-index: 1;
+    /* Coloca o texto à frente do fundo */
 }
 
 .header__subtitle {
     font-size: 1.2rem;
     margin: 10px 0;
-    position: relative; /* Para trazer o texto à frente do fundo */
-    z-index: 1; /* Coloca o texto à frente do fundo */
+    position: relative;
+    /* Para trazer o texto à frente do fundo */
+    z-index: 1;
+    /* Coloca o texto à frente do fundo */
 }
 
 .header__cta {
     display: inline-block;
-    background: #ff7e00; /* Laranja */
+    background: #ff7e00;
+    /* Laranja */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.5s ease;
-    position: relative; /* Para trazer o botão à frente do fundo */
-    z-index: 1; /* Coloca o botão à frente do fundo */
+    position: relative;
+    /* Para trazer o botão à frente do fundo */
+    z-index: 1;
+    /* Coloca o botão à frente do fundo */
 }
 
 .header__cta:hover {
     color: #ff7e00;
     font-weight: bold;
-    background:#fff;
+    background: #fff;
 }
 
 .section {
     padding: 40px 20px;
     margin: 20px 0;
-    background: #222; /* Fundo escuro para as seções */
+    background: #222;
+    /* Fundo escuro para as seções */
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.5s ease, box-shadow 0.3s ease;
@@ -103,18 +132,23 @@ border-radius: 100%;
     font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
-    color: #ff7e00; /* Laranja */
+    color: #ff7e00;
+    /* Laranja */
 }
+
 .section--sobre {
     display: flex;
     flex-flow: column nowrap;
     width: 70%;
     margin: auto;
-    background: #111; /* Fundo escuro */
+    background: #111;
+    /* Fundo escuro */
     border-radius: 8px;
     padding: 40px 20px;
-    position: relative; /* Para adicionar efeito de fundo */
-    overflow: hidden; /* Para esconder elementos que saem da borda */
+    position: relative;
+    /* Para adicionar efeito de fundo */
+    overflow: hidden;
+    /* Para esconder elementos que saem da borda */
 }
 
 .section--sobre::before {
@@ -124,27 +158,36 @@ border-radius: 100%;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0; /* Coloca o fundo atrás do conteúdo */
-    border-radius: 8px; /* Mesma borda que a seção */
+    z-index: 0;
+    /* Coloca o fundo atrás do conteúdo */
+    border-radius: 8px;
+    /* Mesma borda que a seção */
     transition: opacity 0.5s ease;
 }
 
 .section__description {
     margin: auto;
-    width: 40%;
-    position: relative; /* Para trazer o texto à frente do fundo */
-    z-index: 1; /* Coloca o texto à frente do fundo */
+    width: 100%;
+    position: relative;
+    /* Para trazer o texto à frente do fundo */
+    z-index: 1;
+    /* Coloca o texto à frente do fundo */
     font-size: 1.1rem;
     line-height: 1.8;
-    text-align: center; /* Centraliza o texto */
-    color: #fff; /* Texto em branco */
+    text-align: center;
+    /* Centraliza o texto */
+    color: #fff;
+    /* Texto em branco */
 }
 
 .section__title {
-    color: #ff7e00; /* Laranja */
-    text-align: center; /* Centraliza o título */
+    color: #ff7e00;
+    /* Laranja */
+    text-align: center;
+    /* Centraliza o título */
     margin-bottom: 20px;
-    font-size: 2.5rem; /* Tamanho do título maior */
+    font-size: 2.5rem;
+    /* Tamanho do título maior */
 }
 
 .skills__list {
@@ -171,12 +214,14 @@ border-radius: 100%;
     transform: scale(1.20);
     filter: drop-shadow(0 0 0.75rem rgb(247, 247, 247));
 }
+
 .skills__item img {
     width: 100px;
 }
 
 .section--projetos {
-    background: #222; /* Fundo escuro */
+    background: #222;
+    /* Fundo escuro */
     border-radius: 8px;
     padding: 40px 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
@@ -189,12 +234,15 @@ border-radius: 100%;
 }
 
 .project__item {
-    background: #333; /* Fundo dos projetos */
+    background: #333;
+    /* Fundo dos projetos */
     padding: 20px;
     border-radius: 8px;
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, background 0.5s ease-in-out,;
-    position: relative; /* Para adicionar um efeito de fundo */
-    overflow: hidden; /* Para esconder efeitos que saem da borda */
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, background 0.5s ease-in-out, ;
+    position: relative;
+    /* Para adicionar um efeito de fundo */
+    overflow: hidden;
+    /* Para esconder efeitos que saem da borda */
 }
 
 .project__item {
@@ -202,45 +250,79 @@ border-radius: 100%;
 }
 
 .project__item:hover {
-    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+    transform: scale(1.05);
+    /* Aumenta o tamanho ao passar o mouse */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
 }
+
+
 .pitBurguer:hover {
     background: url(./assets/pitburger-back.png);
     background-repeat: no-repeat;
     background-size: cover;
     transition: 0.5s ease-in-out;
 
+    .project__description {
+        font-weight: bolder;
+    }
+
+}
+
+.currencyConvert:hover {
+    color: black;
+    background: url(./assets/currencyConvert-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s ease-in-out;
+
+    .project__description {
+        color: black;
+        font-weight: bolder;
+    }
+
+
 }
 
 .project__item:hover::before {
-    opacity: 0.2; /* Efeito ao passar o mouse */
+    opacity: 0.2;
+    /* Efeito ao passar o mouse */
 }
 
 .project__title {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #ff7e00; /* Laranja */
-    position: relative; /* Para trazer o texto à frente do fundo */
-    z-index: 1; /* Coloca o texto à frente do fundo */
+    color: #ff7e00;
+    /* Laranja */
+    position: relative;
+    /* Para trazer o texto à frente do fundo */
+    z-index: 1;
+    /* Coloca o texto à frente do fundo */
 }
 
 .project__description {
-    color: #fff; /* Texto em branco */
-    position: relative; /* Para trazer o texto à frente do fundo */
-    z-index: 1; /* Coloca o texto à frente do fundo */
-    margin-bottom: 15px; /* Espaço entre a descrição e o link */
+    color: #fff;
+    /* Texto em branco */
+    position: relative;
+    /* Para trazer o texto à frente do fundo */
+    z-index: 1;
+    /* Coloca o texto à frente do fundo */
+    margin-bottom: 15px;
+    /* Espaço entre a descrição e o link */
 }
 
 .project__link {
-    color: #ff7e00; /* Laranja */
-    text-decoration: none; /* Remove o sublinhado */
-    font-weight: bold; /* Negrito para destaque */
+    color: #ff7e00;
+    /* Laranja */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    font-weight: bold;
+    /* Negrito para destaque */
     transition: color 0.3s ease;
 }
 
 .project__link:hover {
-    color: #ffffff; /* Laranja intenso ao passar o mouse */
+    color: #ffffff;
+    /* Laranja intenso ao passar o mouse */
 }
 
 .contact__form {
@@ -249,55 +331,68 @@ border-radius: 100%;
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    background: #222; /* Fundo escuro para o formulário */
+    background: #222;
+    /* Fundo escuro para o formulário */
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .form__label {
     margin: 10px 0 5px;
-    color: #ff7e00; /* Laranja para os rótulos */
+    color: #ff7e00;
+    /* Laranja para os rótulos */
 }
 
 .form__input, .form__textarea {
     padding: 12px;
     margin-bottom: 15px;
-    border: 2px solid #444; /* Borda cinza escura */
+    border: 2px solid #444;
+    /* Borda cinza escura */
     border-radius: 5px;
-    background: #333; /* Fundo do campo escuro */
-    color: white; /* Texto em branco */
+    background: #333;
+    /* Fundo do campo escuro */
+    color: white;
+    /* Texto em branco */
     transition: border-color 0.3s ease, background 0.3s ease;
 }
 
 .form__input:focus, .form__textarea:focus {
-    border-color: #ff7e00; /* Laranja ao focar */
-    background: #444; /* Fundo levemente mais claro ao focar */
-    outline: none; /* Remove a borda padrão do navegador */
+    border-color: #ff7e00;
+    /* Laranja ao focar */
+    background: #444;
+    /* Fundo levemente mais claro ao focar */
+    outline: none;
+    /* Remove a borda padrão do navegador */
 }
 
 .form__submit {
-    background: #ff7e00; /* Laranja */
+    background: #ff7e00;
+    /* Laranja */
     color: white;
     padding: 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.1rem;
-    transition: background 0.3s ease, transform 0.3s ease;
+    transition: background 0.5s ease, transform 0.5s ease;
 }
 
 .form__submit:hover {
-    background: #ff3d00; /* Laranja intenso ao passar o mouse */
-    transform: translateY(-2px); /* Leve efeito de elevação */
+    background: #ff3d00;
+    /* Laranja intenso ao passar o mouse */
+    transform: translateY(-2px);
+    /* Leve efeito de elevação */
 }
 
 
 .footer {
     text-align: center;
     padding: 20px;
-    background: #111; /* Fundo preto */
+    background: #111;
+    /* Fundo preto */
     color: white;
 }
+
 .footer img {
     width: 50px;
     margin: 20px;

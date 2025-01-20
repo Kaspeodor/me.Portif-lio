@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcus - DevHub</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- google fonts - kannit(font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header id="header" class="header">
         <img src="./assets/minhaFoto.jpg" alt="foto-marcus">
@@ -16,19 +22,23 @@
             <a href="#contato" class="header__cta">Entre em Contato</a>
         </div>
     </header>
-
-    <section id="sobre" class="section--sobre">
-        <h2 class="section__title">Sobre Mim</h2>
-        <p class="section__description">Sou um desenvolvedor com experiência prática em PHP 8 e MySQL com integração de APIs. Conhecimentos sólidos de AJAX para comunicação assíncrona com o backend.
-            Uso de NodeJS para criar servidores e aplicações de backend. Boa familiaridade com CodeIgniter e Laravel para estruturar aplicativos robustos em PHP. Boa prática de versionamento com GIT. 
-            Entendimento de hospedagem e deploy de projetos web.</p>
-    </p>
-    </section>
-
     <section id="habilidades" class="section--habilidades">
         <h2 class="section__title">Formação</h2>
         <p class="section__description">Dev Club - Front End <br>Udemy - Full Stack</p>
-    </p> <br>
+
+        <section id="sobre" class="section--sobre">
+            <h2 class="section__title">Sobre Mim</h2>
+            <p class="section__description">Sou Marcus Vinicius Fernandes, Desenvolvedor Front-End recém-formado, com 26
+                anos e uma base sólida em tecnologias essenciais para o desenvolvimento de interfaces web modernas e
+                responsivas. Minha formação e projetos acadêmicos me permitiram aplicar essas tecnologias na prática,
+                desenvolvendo soluções eficientes e criativas. Estou em busca de oportunidades para contribuir em
+                equipes de desenvolvimento, aprimorar minhas habilidades e criar experiências digitais que agreguem
+                valor ao usuário e aos negócios.
+
+                Possuo conhecimentos em:</p>
+            </p>
+        </section>
+        <br>
 
         <h2 class="section__title">Habilidades</h2>
         <ul class="skills__list">
@@ -37,8 +47,8 @@
             <li class="skills__item"> <img src="./assets/javascript-logo.png" alt="js-logo"><br>JavaScript</li>
             <li class="skills__item"> <img src="./assets/react-logo.png" alt="nodeJS-logo"><br>React</li>
             <li class="skills__item"> <img src="./assets/git-logo.png" alt="git-logo"><br>Git</li>
-            <li class="skills__item"> <img src="./assets/nodeJS-logo.png" alt="nodeJS-logo"><br>Node.js</li>
-            
+            <li class="skills__item"> <img src="./assets/php-logo.png" alt="nodeJS-logo"><br>Php</li>
+
         </ul>
     </section>
 
@@ -48,14 +58,18 @@
             <article class="project__item pitBurguer">
                 <h3 class="project__title">Pit Burguer</h3>
                 <p class="project__description">Hamburgueria Responsiva.</p>
-                <a href="https://kaspeodor.github.io/JS-ProjectPitBurguer/index.html" class="project__link">Ver Projeto</a>
+                <a href="https://marcusvinidev.github.io/JS-ProjectPitBurguer/index.html" class="project__link">Ver
+                    Projeto</a>
             </article>
-            <article class="project__item">
-                <h3 class="project__title">Projeto 2</h3>
-                <p class="project__description">Descrição do projeto 2. Uma ferramenta que... [detalhes].</p>
-                <a href="#" class="project__link">Ver Projeto</a>
+            <article class="project__item currencyConvert">
+                <h3 class="project__title">CurrencyConvert</h3>
+                <p class="project__description">Conversor de Moedas [beta].</p>
+                <a href="https://marcusvinidev.github.io/currencyConvert/" class="project__link">Ver
+                    Projeto</a>
             </article>
-            <!-- Adicione mais projetos conforme necessário -->
+
+
+            <!-- Adicionar mais projetos conforme necessário -->
         </div>
     </section>
 
@@ -78,15 +92,19 @@
     <footer id="footer" class="footer">
         <div class="footer__container">
             <div class="footer__socials"></div>
-                <a href="https://www.facebook.com/profile.php?id=100004031355364" class="footer__link"><img src="./assets/facebook-logo.png" alt="Facebook"></a>
-                <a href="https://www.linkedin.com/in/kaspeodor/" class="footer__link"><img src="./assets/linkedin-logo.png" alt="LinkedIn"></a>
-                <a href="https://github.com/MarcusViniDev/Marcus-Vinicius" class="footer__link"><img src="./assets/github-logo.png" alt="GitHub"></a>
-            </div>
-            <p class="footer__text">© 2024 Marcus Vinicius. Todos os direitos reservados.</p>
-            
+            <a href="https://www.facebook.com/profile.php?id=100004031355364" class="footer__link"><img
+                    src="./assets/facebook-logo.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/in/kaspeodor/" class="footer__link"><img src="./assets/linkedin-logo.png"
+                    alt="LinkedIn"></a>
+            <a href="https://github.com/MarcusViniDev/Marcus-Vinicius" class="footer__link"><img
+                    src="./assets/github-logo.png" alt="GitHub"></a>
+        </div>
+        <p class="footer__text">© 2024 Marcus Vinicius. Todos os direitos reservados.</p>
+
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
